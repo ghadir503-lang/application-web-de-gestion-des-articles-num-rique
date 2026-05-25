@@ -1,0 +1,45 @@
+/* Styles globaux appliques a toute l'application. */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+}
+
+/* Police utilisee pour les blocs de code. */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Garantit que l'application occupe toute la hauteur disponible. */
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+/* Active la direction droite-gauche pour les langues RTL. */
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+/* Aligne les champs de formulaire en mode arabe. */
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Aligne les grands conteneurs en mode arabe. */
+html[dir="rtl"] .container,
+html[dir="rtl"] .articles-page,
+html[dir="rtl"] .post-page,
+html[dir="rtl"] .admin-page,
+html[dir="rtl"] .navbar {
+  text-align: right;
+}
